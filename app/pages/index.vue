@@ -50,10 +50,10 @@
 </template>
 
 <script setup lang="ts">
-import SectionTitle from '~/components/SectionTitle.vue'
-import AboutMeSection from '~/components/AboutMeSection.vue'
-import EmploymentHistorySection from '~/components/EmploymentHistorySection.vue'
-import EducationSection from '~/components/EducationSection.vue'
-import ProjectsSection from '~/components/ProjectsSection.vue'
+import SectionTitle from '~/components/ui/SectionTitle.vue'
+import AboutMeSection from '~/components/sections/AboutMeSection.vue'
+import EmploymentHistorySection from '~/components/sections/EmploymentHistorySection.vue'
+import EducationSection from '~/components/sections/EducationSection.vue'
+import ProjectsSection from '~/components/sections/ProjectsSection.vue'
 </script>
 

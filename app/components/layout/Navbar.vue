@@ -43,7 +43,7 @@
 </template>
 
 <script setup lang="ts">
-import ThemeToggle from '~/components/ThemeToggle.vue'
+import ThemeToggle from '~/components/ui/ThemeToggle.vue'
 </script>
 
 <style scoped>

@@ -9,6 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import SectionTitle from '~/components/SectionTitle.vue'
+import SectionTitle from '~/components/ui/SectionTitle.vue'
 </script>
 
