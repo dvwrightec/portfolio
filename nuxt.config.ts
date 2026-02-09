@@ -12,4 +12,12 @@ export default defineNuxtConfig({
       supabasePublishableKey: process.env.SUPABASE_PUBLISHABLE_KEY,
     },
   },
+  i18n: {
+    locales: [
+      {'code': 'en', language: 'en-US', },
+      {'code': 'es', language: 'fr-FR',},
+    ],
+    defaultLocale: 'en',
+    vueI18n: './i18n.config.ts',
+  },
 })

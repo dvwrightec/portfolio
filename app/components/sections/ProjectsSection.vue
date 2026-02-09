@@ -1,11 +1,20 @@
 <template>
-  <section id="projects" class="scroll-mt-24">
+  <section
+    id="projects"
+    v-motion
+    :initial="{ opacity: 0, y: 16 }"
+    :enter="{ opacity: 1, y: 0, transition: { duration: 0.5 } }"
+    class="scroll-mt-24"
+  >
     <SectionTitle title="Projects" />
     <div class="grid gap-6 sm:grid-cols-2">
       <NuxtLink
-        v-for="p in projects"
+        v-for="(p, index) in projects"
         :key="p.slug"
         :to="`/projects/${p.slug}`"
+        v-motion
+        :initial="{ opacity: 0, y: 12 }"
+        :enter="{ opacity: 1, y: 0, transition: { duration: 0.45, delay: index * 0.08 } }"
         class="group block"
       >
         <div

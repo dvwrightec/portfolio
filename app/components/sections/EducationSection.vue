@@ -1,5 +1,11 @@
 <template>
-  <section id="education" class="scroll-mt-24">
+  <section
+    id="education"
+    v-motion
+    :initial="{ opacity: 0, y: 16 }"
+    :enter="{ opacity: 1, y: 0, transition: { duration: 0.5 } }"
+    class="scroll-mt-24"
+  >
     <SectionTitle title="Education" />
     <div
       class="relative overflow-hidden rounded-2xl border border-slate-200/60 bg-white/70 dark:border-white/10 dark:bg-white/5"

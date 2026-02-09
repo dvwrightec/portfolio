@@ -1,5 +1,11 @@
 <template>
-  <section id="employment" class="scroll-mt-24">
+  <section
+    id="employment"
+    v-motion
+    :initial="{ opacity: 0, y: 16 }"
+    :enter="{ opacity: 1, y: 0, transition: { duration: 0.5 } }"
+    class="scroll-mt-24"
+  >
     <SectionTitle title="Employment History" />
 
     <div class="relative mt-8">
