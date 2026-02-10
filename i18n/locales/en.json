@@ -115,13 +115,17 @@
     "notFound": "Project not found.",
     "metaTitle": "Project — Portfolio",
     "items": {
-      "portfolio-nuxt": {
-        "title": "Portfolio Website",
-        "description": "A fast personal portfolio with anchor navigation, project detail pages, and a clean dark UI."
+      "zetabarber-platform": {
+        "title": "ZetaBarber",
+        "description": "Discovery and booking platform for local barbers built with Next.js and Node.js, using shadcn/ui and React Hooks for a fast, responsive UX. Includes search by city, appointment scheduling, and automated reminders."
       },
-      "supabase-app": {
-        "title": "Supabase App",
-        "description": "Example CRUD app using Supabase as the backend."
+      "warmly-ai-gtm": {
+        "title": "Warmly AI GTM Platform",
+        "description": "AI-native GTM platform built with React, Redux, and Tailwind CSS, integrating AI/LLM services with a .NET Core backend. Covers person-level intent signals, AI chat/email engagement, and workflow orchestration for revenue teams."
+      },
+      "gmelius-email-collaboration": {
+        "title": "Gmelius",
+        "description": "AI email assistant and shared inbox suite built with React on AWS, backed by .NET Core services. Uses AI/LLM fine-tuning for drafting and triage, with Storybook for UI consistency and Swagger UI for APIs."
       }
     }
   }
