@@ -4,6 +4,7 @@
 
     <AboutMeSection />
     <EmploymentHistorySection />
+    <TechSkillsSection />
     <EducationSection />
     <ProjectsSection />
 
@@ -14,6 +15,7 @@
 <script setup lang="ts">
 import AboutMeSection from '~/components/sections/AboutMeSection.vue'
 import EmploymentHistorySection from '~/components/sections/EmploymentHistorySection.vue'
+import TechSkillsSection from '~/components/sections/TechSkillsSection.vue'
 import EducationSection from '~/components/sections/EducationSection.vue'
 import ProjectsSection from '~/components/sections/ProjectsSection.vue'
 import ContactMeSection from '~/components/sections/ContactMeSection.vue'

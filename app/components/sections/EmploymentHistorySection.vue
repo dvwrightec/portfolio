@@ -1,56 +1,59 @@
 <template>
-  <section
-    id="employment"
-    v-motion
-    :initial="{ opacity: 0, y: 16 }"
-    :enter="{ opacity: 1, y: 0, transition: { duration: 0.5 } }"
-    class="scroll-mt-24"
-  >
+  <section id="employment" v-motion :initial="{ opacity: 0, y: 16 }"
+    :enter="{ opacity: 1, y: 0, transition: { duration: 0.5 } }" class="scroll-mt-24">
     <SectionTitle :title="t('sections.employment')" />
 
-    <div class="relative mt-8">
-      <div
-        class="pointer-events-none absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-slate-200/70 dark:bg-white/10 md:block">
-      </div>
+    <UTimeline v-model="activeIndex" :items="timelineItems" color="primary" size="lg" class="mt-8" :ui="{
+      root: 'pl-0 md:pl-4',
+      date: 'hidden',
+      item: 'group relative flex flex-1 gap-10',
+      separator: '!bg-slate-600 group-data-[state=completed]:!bg-slate-700 dark:!bg-slate-500 dark:group-data-[state=completed]:!bg-primary',
+      indicator: 'group-data-[state=completed]:bg-transparent group-data-[state=active]:bg-transparent',
+    }">
+      <template #indicator="{ item }">
+        <a v-if="item.company.websiteUrl" :href="item.company.websiteUrl" target="_blank" rel="noopener noreferrer"
+          class="block" :title="item.company.company">
+          <CompanyLogo :logo-url="item.company.logoUrl" :badge="item.company.badge" :company-name="item.company.company"
+            :website-url="''" :invert-in-dark="item.company.id === 'descartes'" size="lg" square />
+        </a>
+        <CompanyLogo v-else :logo-url="item.company.logoUrl" :badge="item.company.badge"
+          :company-name="item.company.company" :invert-in-dark="item.company.id === 'descartes'" size="lg" square />
+      </template>
 
-      <div class="space-y-10">
-        <div v-for="(item, index) in localizedExperiences" :key="item.badge" class="relative">
-          <div class="md:grid md:grid-cols-2 md:items-start md:gap-8">
-            <div v-motion :initial="{ opacity: 0, y: 18 }"
-              :enter="{ opacity: 1, y: 0, transition: { duration: 0.5, delay: index * 0.08 } }" :class="[
-                'rounded-2xl border border-slate-200/60 bg-white/80 p-6 shadow-sm dark:border-white/10 dark:bg-white/5',
-                index % 2 === 0 ? 'md:col-start-1 md:pr-10' : 'md:col-start-2 md:pl-10',
-              ]">
+      <template #title="{ item }">
+        <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-2">
+          <a v-if="item.company.websiteUrl" :href="item.company.websiteUrl" target="_blank" rel="noopener noreferrer"
+            class="hover:text-sky-600 hover:underline dark:hover:text-sky-400">
+            {{ item.company.company }}
+          </a>
+          <span v-else>{{ item.company.company }}</span>
+        </h3>
+      </template>
 
-              <p class="text-sm font-semibold text-slate-900 dark:text-white">
-                {{ item.role }}
-              </p>
-              <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">
-                {{ item.company }}
-              </p>
-              <ul class="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700 dark:text-slate-300">
-                <li v-for="bullet in item.bullets" :key="bullet">{{ bullet }}</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="absolute left-1/2 top-2 hidden -translate-x-1/2 md:flex md:flex-col md:items-center">
-            <span
-              class="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 bg-white text-xs font-semibold text-slate-700 shadow-sm dark:border-white/15 dark:bg-slate-950 dark:text-slate-200">
-              {{ item.badge }}
-            </span>
-            <span class="mt-2 text-xs font-medium text-slate-500 dark:text-slate-400">
-              {{ item.dates }}
-            </span>
+      <template #description="{ item }">
+        <div class="divide-y divide-slate-200/60 dark:divide-white/10">
+          <div v-for="(role, roleIdx) in item.company.roles" :key="roleIdx" class="py-4 first:pt-0">
+            <p class="text-base font-semibold text-slate-900 dark:text-white">{{ role.role }}</p>
+            <p class="mt-1 text-base text-slate-500 dark:text-slate-400">{{ role.dates }}</p>
+            <p v-if="role.scope"
+              class="mt-2 text-sm font-medium uppercase tracking-wider text-slate-500/80 dark:text-slate-400/80">
+              {{ role.scope }}
+            </p>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-base text-slate-700 dark:text-slate-300">
+              <li v-for="bullet in role.bullets" :key="bullet">{{ bullet }}</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </template>
+    </UTimeline>
   </section>
 </template>
 
 <script setup lang="ts">
+import type { TimelineItem } from '@nuxt/ui'
 import SectionTitle from '~/components/ui/SectionTitle.vue'
+import CompanyLogo from '~/components/ui/CompanyLogo.vue'
+import { companies, getCompanyInfo } from '~/data/companies'
 
 const { t, tm, rt } = useI18n() as {
   t: (key: string) => string
@@ -58,37 +61,83 @@ const { t, tm, rt } = useI18n() as {
   rt: (msg: unknown) => string
 }
 
-const experiences = [
-  {
-    badge: 'SF',
-  },
-  {
-    badge: 'FS',
-  },
-  {
-    badge: 'BE',
-  },
-  {
-    badge: 'JR',
-  },
-  {
-    badge: 'IN',
-  },
-]
-
 const localizedExperiences = computed<
-  Array<{ badge: string; role: string; company: string; dates: string; bullets: string[] }>
->(() =>
-  experiences.map((item, index) => {
+  Array<{ role: string; company: string; dates: string; scope?: string; bullets: string[] }>
+>(() => {
+  const items = tm('employment.items') as Array<{
+    role: string
+    company: string
+    dates: string
+    scope?: string
+    bullets: string[]
+  }>
+  if (!Array.isArray(items)) return []
+  return items.map((item, index) => {
     const base = `employment.items.${index}`
     const bullets = tm(`${base}.bullets`)
+    const scope = tm(`${base}.scope`)
     return {
-      ...item,
       role: t(`${base}.role`),
       company: t(`${base}.company`),
       dates: t(`${base}.dates`),
-      bullets: Array.isArray(bullets) ? bullets.map((bullet) => rt(bullet)) : [],
+      scope: typeof scope === 'string' ? scope : '',
+      bullets: Array.isArray(bullets) ? bullets.map((b) => rt(b)) : [],
     }
   })
+})
+
+type CompanyGroup = {
+  company: string
+  id: string
+  badge: string
+  logoUrl: string
+  fallbackLogoUrl?: string
+  websiteUrl: string
+  roles: Array<{ role: string; dates: string; scope?: string; bullets: string[] }>
+}
+
+const groupedByCompany = computed<CompanyGroup[]>(() => {
+  const groups = new Map<string, CompanyGroup>()
+  for (const item of localizedExperiences.value) {
+    const companyInfo = getCompanyInfo(item.company)
+    const existing = groups.get(item.company)
+    if (existing) {
+      existing.roles.push({
+        role: item.role,
+        dates: item.dates,
+        scope: item.scope,
+        bullets: item.bullets,
+      })
+    } else {
+      groups.set(item.company, {
+        company: item.company,
+        id: companyInfo?.id ?? '',
+        badge: companyInfo?.badge ?? item.company.slice(0, 2).toUpperCase(),
+        logoUrl: companyInfo?.logoUrl ?? '',
+        fallbackLogoUrl: companyInfo?.fallbackLogoUrl,
+        websiteUrl: companyInfo?.websiteUrl ?? '',
+        roles: [
+          { role: item.role, dates: item.dates, scope: item.scope, bullets: item.bullets },
+        ],
+      })
+    }
+  }
+  return Array.from(groups.values())
+})
+
+type EmploymentTimelineItem = TimelineItem & {
+  value: number
+  company: CompanyGroup
+}
+
+const timelineItems = computed<EmploymentTimelineItem[]>(() =>
+  groupedByCompany.value.map((company, idx) => ({
+    value: idx,
+    date: company.roles[0]?.dates ?? '',
+    title: company.company,
+    company,
+  }))
 )
+
+const activeIndex = ref(0)
 </script>

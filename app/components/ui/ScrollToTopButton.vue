@@ -3,7 +3,7 @@
     ref="buttonRef"
     type="button"
     :class="[
-      'fixed bottom-6 right-6 z-50 inline-flex h-12 w-12 items-center justify-center rounded-full border border-slate-200/70 bg-white/90 text-sm font-semibold text-slate-800 shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl dark:border-white/15 dark:bg-slate-900/90 dark:text-slate-100',
+      'fixed bottom-6 right-6 z-50 inline-flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-slate-200/70 bg-white/90 text-sm font-semibold text-slate-800 shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl dark:border-white/15 dark:bg-slate-900/90 dark:text-slate-100',
       !isVisible && 'pointer-events-none',
     ]"
     :aria-hidden="!isVisible"

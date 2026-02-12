@@ -2,13 +2,16 @@
   "nav": {
     "about": "Sobre mi",
     "employment": "Experiencia",
+    "skills": "Habilidades",
     "education": "Educacion",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "resume": "CV"
   },
   "sections": {
     "about": "Sobre mi",
     "employment": "Experiencia",
+    "skills": "Habilidades Tecnicas",
     "education": "Educacion",
     "projects": "Proyectos",
     "contact": "Contacto"
@@ -18,13 +21,17 @@
     "subtitle": "Next.js, Node.js, PostgreSQL. APIs, AI/LLM, e integraciones de plataforma para productos web modernos.",
     "cta": {
       "projects": "Ver proyectos",
-      "contact": "Contactarme"
+      "contact": "Contactarme",
+      "resume": "Ver CV"
     }
   },
   "about": {
     "photoAlt": "Foto de perfil",
     "p1": "Soy un desarrollador full-stack con una pasion de larga data por el desarrollo de software y el aprendizaje continuo. Construyo plataformas web confiables y escalables con foco en arquitectura limpia, codigo mantenible y decisiones tecnicas pragmaticas alineadas a las necesidades del negocio.",
     "p2": "Mi experiencia principal se centra en Next.js, Node.js y PostgreSQL, complementada por Supabase, automatizacion de flujos con n8n e integraciones de AI/LLM, incluyendo arquitecturas basadas en RAG. Tambien trabajo comodamente en entornos mixtos con frontends en Angular y backends en Django/DRF."
+  },
+  "resume": {
+    "title": "Curriculum"
   },
   "contact": {
     "kicker": "Ponte en contacto",
@@ -48,65 +55,122 @@
   },
   "education": {
     "photoAlt": "Campus universitario",
-    "school": "Universidad Tecnologica Nacional (UTN) — Argentina",
-    "dates": "2010 – 2015",
-    "program": "Tecnico Universitario en Programacion",
-    "degree": "Licenciatura en Ciencias de la Computacion"
+    "school": "California Lutheran University",
+    "items": [
+      {
+        "degree": "Maestria en Ciencias (M.S.) Ciencias de la Computacion",
+        "dates": "Jul 2005 – Ago 2007"
+      },
+      {
+        "degree": "Licenciatura en Ciencias (B.S.) Ciencias de la Computacion",
+        "dates": "Jul 2001 – Jun 2005"
+      }
+    ]
   },
   "employment": {
     "items": [
       {
+        "role": "Ingeniero Senior AI/ML",
+        "company": "Descartes | Waterloo, Ontario, Canada",
+        "dates": "May 2023 – Dic 2025",
+        "scope": "SaaS empresarial, integracion IA, modernizacion ERP",
+        "bullets": [
+          "Lider arquitectura de plataforma SaaS distribuida para flujos ERP multi-departamento",
+          "Disene microservicios modulares con Node.js, Go y .NET",
+          "Construi plataformas frontend con Next.js, Vue (Nuxt), React y Astro",
+          "Implemente arquitectura headless CMS con Sanity, Strapi y Prismic",
+          "Disene asistente empresarial con IA usando pipeline LLM + RAG",
+          "Construi sistema de ingestion y embedding de documentos con busqueda vectorial",
+          "Fine-tune modelos de lenguaje para automatizacion interna",
+          "Desarrolle sistema de deteccion de objetos en almacen (YOLOv8, PyTorch)",
+          "Desplegue servicios ML con FastAPI + Docker + Kubernetes",
+          "Gestiono despliegues en la nube en Microsoft Azure"
+        ]
+      },
+      {
+        "role": "Ingeniero de Software (Plataforma IA y Sistemas FinTech)",
+        "company": "Globalization Partners | Boston, MA, USA",
+        "dates": "Mar 2020 – Abr 2023",
+        "scope": "Sistemas financieros, experimentacion ML, APIs alta disponibilidad",
+        "bullets": [
+          "Desarrolle APIs financieras de alto rendimiento en Node.js, Go, C#, .NET",
+          "Construi prototipos de deteccion de fraude con modelos de ML",
+          "Implemente asistente de insights financieros con GPT",
+          "Disene busqueda de documentacion de cumplimiento con arquitectura RAG",
+          "Construi pipelines de entrenamiento ML en Python",
+          "Mejore precision de deteccion de anomalias en 28%",
+          "Lidere optimizacion de bases de datos PostgreSQL y MongoDB"
+        ]
+      },
+      {
         "role": "Desarrollador Full-Stack Senior",
-        "company": "FIA Tech — Proyectos remotos / internacionales",
-        "dates": "May 2022 – Dec 2025",
+        "company": "Globalization Partners | Boston, MA, USA",
+        "dates": "Ene 2018 – Abr 2020",
+        "scope": "Escalado SaaS, ecosistemas CMS, integraciones ERP",
         "bullets": [
-          "Lidere el diseno de plataformas full-stack con Next.js, Node.js y PostgreSQL.",
-          "Cree APIs REST escalables con foco en autenticacion, validacion y performance.",
-          "Lidere integraciones complejas con plataformas ERP/CMS y servicios externos.",
-          "Implemente Supabase para autenticacion, almacenamiento y tiempo real.",
-          "Entregue funcionalidades de AI/LLM, incluyendo arquitecturas RAG."
+          "Escale producto SaaS de MVP a plataforma empresarial",
+          "Integre flujos ERP (inventario, facturacion, reportes)",
+          "Construi plataformas de marketing y producto con Next.js + Nuxt",
+          "Implemente arquitectura CMS con Strapi + PostgreSQL",
+          "Introduje despliegues automatizados e infraestructura como codigo",
+          "Inicie experimentos de modelado predictivo para analitica de usuarios"
         ]
       },
       {
-        "role": "Desarrollador Full-Stack",
-        "company": "Henry — Plataformas web y aplicaciones de negocio",
-        "dates": "Mar 2020 – Apr 2022",
+        "role": "Desarrollador Full-Stack – Sistemas de Comercio",
+        "company": "Data-Core Systems Inc. | Bristol, PA, USA",
+        "dates": "Jun 2015 – Dic 2017",
+        "scope": "Arquitectura e-commerce, optimizacion de performance",
         "bullets": [
-          "Desarrolle apps end-to-end en frontend, backend y base de datos.",
-          "Cree servicios backend con Node.js y PostgreSQL.",
-          "Implemente frontends modulares en Angular.",
-          "Integre APIs de terceros y servicios internos."
+          "Construi plataforma de comercio escalable con Next.js, Node.js, MongoDB",
+          "Integre Shopify y NetSuite ERP",
+          "Desarrolle checkout y sistemas de pago personalizados",
+          "Implemente autenticacion Supabase y acceso basado en roles",
+          "Construi prototipo de motor de recomendacion",
+          "Mejore tasa de conversion de checkout en 18%"
         ]
       },
       {
-        "role": "Desarrollador Backend / Software",
-        "company": "Sabio LA — APIs y sistemas orientados a datos",
-        "dates": "Oct 2018 – Jan 2020",
+        "role": "Desarrollador Backend – ERP y APIs",
+        "company": "Data-Core Systems Inc. | Bristol, PA, USA",
+        "dates": "Abr 2013 – May 2015",
+        "scope": "Arquitectura ERP, modernizacion API",
         "bullets": [
-          "Cree APIs REST con Django y Django REST Framework.",
-          "Modele bases de datos relacionales y optimice consultas.",
-          "Implemente autenticacion, autorizacion y validaciones.",
-          "Integre servicios backend con frontends y APIs externas."
+          "Disene APIs REST con Node.js, Flask, Django REST",
+          "Construi motores de reportes y flujos de datos para modulos ERP",
+          "Optime indice y diseno de esquema PostgreSQL",
+          "Reduje tiempos de respuesta del servidor en 35%",
+          "Ayude a migrar monolito legacy a estructura de servicios modular"
         ]
       },
       {
-        "role": "Desarrollador de Software Junior",
-        "company": "Globant — Aplicaciones web",
-        "dates": "Aug 2016 – Jun 2018",
+        "role": "Ingeniero Frontend Senior",
+        "company": "Chegg Inc. | Santa Clara, CA, USA",
+        "dates": "Jul 2010 – Mar 2013",
         "bullets": [
-          "Entregue funcionalidades pequenas y medianas con supervision senior.",
-          "Implemente componentes frontend y endpoints backend.",
-          "Corregi bugs, refactorice codigo y di soporte a apps existentes."
+          "Lidere migracion a arquitectura SPA con Angular",
+          "Construi dashboards empresariales y paneles de analitica",
+          "Mejore performance de UI en 30%",
+          "Estandarice librerias de componentes"
         ]
       },
       {
-        "role": "Practicante / Trainee de Programacion",
-        "company": "Telefonica — Proyectos academicos y de entrada",
-        "dates": "Apr 2015 – Jul 2016",
+        "role": "Desarrollador Frontend",
+        "company": "Chegg Inc. | Santa Clara, CA, USA",
+        "dates": "Ago 2008 – Jun 2010",
         "bullets": [
-          "Asisti en el desarrollo de apps web simples y herramientas internas.",
-          "Apoye tareas de testing, debugging y documentacion.",
-          "Aplique fundamentos de programacion en escenarios practicos."
+          "Desarrolle sitios web empresariales con CMS",
+          "Construi sistemas UI responsivos con HTML, CSS, JavaScript",
+          "Optime performance SEO"
+        ]
+      },
+      {
+        "role": "Pasante de Desarrollo Web",
+        "company": "Chegg Inc. | Santa Clara, CA, USA",
+        "dates": "Jun 2007 – Jul 2008",
+        "bullets": [
+          "Asisti en desarrollo frontend y soporte de base de datos",
+          "Obtuve experiencia fundamental en arquitectura de sistemas web"
         ]
       }
     ]
@@ -131,5 +195,13 @@
         "description": "Suite de asistente de email con IA y bandejas compartidas construida con React sobre AWS, respaldada por servicios .NET Core. Usa fine-tuning de AI/LLM para redaccion y triage, con Storybook para consistencia de UI y Swagger UI para APIs."
       }
     }
+  },
+  "skills": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Bases de Datos",
+    "cms": "CMS",
+    "ai": "IA y ML",
+    "tools": "Herramientas y DevOps"
   }
 }

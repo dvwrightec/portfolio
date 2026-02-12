@@ -1,10 +1,19 @@
 /// <reference types="@nuxtjs/i18n" />
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+import tailwindcss from "@tailwindcss/vite"
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/icon', '@vueuse/motion/nuxt'],
- 
+  modules: ['@nuxt/ui', '@nuxtjs/i18n', '@nuxt/icon', '@vueuse/motion/nuxt'],
+
+  css: ['./app/assets/css/main.css'],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
+
   runtimeConfig: {
     public: {
       supabaseUrl: process.env.SUPABASE_URL,
