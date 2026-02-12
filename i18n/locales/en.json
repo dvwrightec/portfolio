@@ -68,6 +68,7 @@
     ]
   },
   "employment": {
+    "scopeLabel": "Scope:",
     "items": [
       {
         "role": "Senior AI/ML Engineer",

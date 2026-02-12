@@ -37,7 +37,8 @@
             <p class="mt-1 text-base text-slate-500 dark:text-slate-400">{{ role.dates }}</p>
             <p v-if="role.scope"
               class="mt-2 text-sm font-medium uppercase tracking-wider text-slate-500/80 dark:text-slate-400/80">
-              {{ role.scope }}
+              <span class="text-base font-bold font-mono">{{ t('employment.scopeLabel') }}</span>
+              <span class="text-base">{{ role.scope }}</span>
             </p>
             <ul class="mt-4 list-disc space-y-2 pl-5 text-base text-slate-700 dark:text-slate-300">
               <li v-for="bullet in role.bullets" :key="bullet">{{ bullet }}</li>
@@ -55,9 +56,10 @@ import SectionTitle from '~/components/ui/SectionTitle.vue'
 import CompanyLogo from '~/components/ui/CompanyLogo.vue'
 import { companies, getCompanyInfo } from '~/data/companies'
 
-const { t, tm, rt } = useI18n() as {
+const { t, tm, te, rt } = useI18n() as {
   t: (key: string) => string
   tm: (key: string) => unknown
+  te: (key: string) => boolean
   rt: (msg: unknown) => string
 }
 
@@ -75,12 +77,12 @@ const localizedExperiences = computed<
   return items.map((item, index) => {
     const base = `employment.items.${index}`
     const bullets = tm(`${base}.bullets`)
-    const scope = tm(`${base}.scope`)
+    const scope = te(`${base}.scope`) ? t(`${base}.scope`) : undefined
     return {
       role: t(`${base}.role`),
       company: t(`${base}.company`),
       dates: t(`${base}.dates`),
-      scope: typeof scope === 'string' ? scope : '',
+      scope,
       bullets: Array.isArray(bullets) ? bullets.map((b) => rt(b)) : [],
     }
   })
