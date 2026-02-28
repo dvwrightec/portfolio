@@ -15,7 +15,7 @@
     >
       <div class="absolute inset-0">
         <img
-          src="/California Lutheran University.jpg"
+          src="/University_of_West_Florida.webp"
           :alt="t('education.photoAlt')"
           class="h-full w-full object-cover object-center transition duration-300 group-hover:scale-105"
           loading="lazy"
@@ -41,9 +41,9 @@
           </div>
         </div>
         <img
-          src="/CLU-mark.jpg"
+          src="https://uwf.edu/media/uwf-mstoner/site-assets/images/UWFLogo_Stacked.svg"
           :alt="t('education.school')"
-          class="h-20 w-20 shrink-0 object-contain opacity-80"
+          class="h-20 w-20 shrink-0 object-contain opacity-90 invert dark:invert-0"
           :title="t('education.school')"
           loading="lazy"
         />

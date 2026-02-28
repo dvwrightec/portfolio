@@ -1,8 +1,6 @@
-# Personal Portfolio (Nuxt 4 + Tailwind)
+# David Wright — Portfolio (Nuxt 4 + Tailwind)
 
-Clean, single-page portfolio built with Nuxt 4 and Tailwind CSS. Includes anchor navigation, a timeline-style employment section, animated reveals, project detail pages, and a light/dark/system theme toggle.
-
-![California Lutheran University campus](public/California%20Lutheran%20University.jpg)
+Single-page portfolio for David Wright, Senior Full Stack Engineer. Built with Nuxt 4 and Tailwind CSS. Includes anchor navigation, timeline-style employment history, animated reveals, project detail pages, and light/dark/system theme toggle.
 
 ## Features
 
@@ -100,7 +98,12 @@ bun run preview
 - **Theme logic**: tweak `app/composables/useTheme.ts`
 - **Scroll-to-top button**: `app/components/ui/ScrollToTopButton.vue`
 - **Buttons styling**: `app/assets/css/tailwind.css`
-- **Images**: place assets in `public/` (e.g. `public/selfie.jpg`, `public/universidad_tecnologica_nacional_cover.jpg`)
+- **Images**: place assets in `public/`:
+  - `public/David_Wright.jpg` — About section portrait
+  - `public/David_Wright.pdf` — Resume (download + modal)
+  - `public/University_of_West_Florida.webp` — Education section background
+  - `public/UWF-mark.png` — Education section logo (optional)
+  - Company logos: add under `public/icons/` and set `logoUrl` in `app/data/companies.ts` if you prefer local files over favicons
 
 ## Environment Variables (Optional)
 

@@ -3,7 +3,7 @@
     "about": "Sobre mi",
     "employment": "Experiencia",
     "skills": "Habilidades",
-    "education": "Educacion",
+    "education": "Educación",
     "projects": "Proyectos",
     "contact": "Contacto",
     "resume": "CV"
@@ -11,14 +11,14 @@
   "sections": {
     "about": "Sobre mi",
     "employment": "Experiencia",
-    "skills": "Habilidades Tecnicas",
-    "education": "Educacion",
+    "skills": "Habilidades Técnicas",
+    "education": "Educación",
     "projects": "Proyectos",
     "contact": "Contacto"
   },
   "overview": {
-    "title": "Desarrollador Full-Stack Senior",
-    "subtitle": "Next.js, Node.js, PostgreSQL. APIs, AI/LLM, e integraciones de plataforma para productos web modernos.",
+    "title": "Ingeniero Full Stack Senior",
+    "subtitle": "React, Next.js, TypeScript, Node.js. Sistemas cloud-native, plataformas distribuidas y pipelines en tiempo real para SaaS y healthcare escalables.",
     "cta": {
       "projects": "Ver proyectos",
       "contact": "Contactarme",
@@ -27,8 +27,8 @@
   },
   "about": {
     "photoAlt": "Foto de perfil",
-    "p1": "Soy un desarrollador full-stack con una pasion de larga data por el desarrollo de software y el aprendizaje continuo. Construyo plataformas web confiables y escalables con foco en arquitectura limpia, codigo mantenible y decisiones tecnicas pragmaticas alineadas a las necesidades del negocio.",
-    "p2": "Mi experiencia principal se centra en Next.js, Node.js y PostgreSQL, complementada por Supabase, automatizacion de flujos con n8n e integraciones de AI/LLM, incluyendo arquitecturas basadas en RAG. Tambien trabajo comodamente en entornos mixtos con frontends en Angular y backends en Django/DRF."
+    "p1": "Ingeniero Full Stack Senior con más de 15 años de experiencia construyendo plataformas SaaS, de salud e IoT escalables. Historial comprobado entregando sistemas cloud-native para más de 100K usuarios y pipelines en tiempo real que procesan millones de eventos mensualmente.",
+    "p2": "Mentalidad de ownership con experiencia profunda en microservicios, optimización de rendimiento y entrega cross-functional. Enfocado en mejorar confiabilidad, reducir latencia y mentorizar ingenieros en equipos de producto. Fortalezas: sistemas distribuidos, plataformas en tiempo real, arquitectura cloud y ownership end-to-end."
   },
   "resume": {
     "title": "Curriculum"
@@ -36,18 +36,18 @@
   "contact": {
     "kicker": "Ponte en contacto",
     "title": "Contacto.",
-    "body": "Contame sobre tu proyecto, objetivos o como puedo ayudar. Respondo en 1-2 dias habiles.",
-    "photoAlt": "Foto de la seccion de contacto",
+    "body": "Cuéntame sobre tu proyecto, objetivos o cómo puedo ayudar. Respondo en 1-2 días hábiles.",
+    "photoAlt": "Foto sección contacto",
     "form": {
       "nameLabel": "Tu Nombre",
-      "namePlaceholder": "Cual es tu nombre?",
+      "namePlaceholder": "¿Cuál es tu nombre?",
       "emailLabel": "Tu Email",
-      "emailPlaceholder": "Cual es tu email?",
+      "emailPlaceholder": "¿Cuál es tu email?",
       "messageLabel": "Tu Mensaje",
-      "messagePlaceholder": "Que queres decir?",
+      "messagePlaceholder": "¿Qué quieres decir?",
       "submit": "Enviar",
       "sending": "Enviando...",
-      "success": "Gracias! Tu mensaje fue enviado.",
+      "success": "¡Gracias! Tu mensaje fue enviado.",
       "error": "Completa todos los campos e intenta de nuevo."
     },
     "email": "Enviar email",
@@ -55,15 +55,11 @@
   },
   "education": {
     "photoAlt": "Campus universitario",
-    "school": "California Lutheran University",
+    "school": "University of West Florida",
     "items": [
       {
-        "degree": "Maestria en Ciencias (M.S.) Ciencias de la Computacion",
-        "dates": "Jul 2005 – Ago 2007"
-      },
-      {
-        "degree": "Licenciatura en Ciencias (B.S.) Ciencias de la Computacion",
-        "dates": "Jul 2001 – Jun 2005"
+        "degree": "Bachelor of Science (BSc)",
+        "dates": "Sep 2006 – May 2010 | USA"
       }
     ]
   },
@@ -71,107 +67,64 @@
     "scopeLabel": "Alcance:",
     "items": [
       {
-        "role": "Ingeniero Senior AI/ML",
-        "company": "Descartes | Waterloo, Ontario, Canada",
-        "dates": "May 2023 – Dic 2025",
-        "scope": "SaaS empresarial, integracion IA, modernizacion ERP",
+        "role": "Senior Full Stack Developer",
+        "company": "SmartRent | Scottsdale, AZ",
+        "dates": "Jul 2021 – Presente",
+        "scope": "IoT SaaS multi-tenant, 150K+ usuarios",
         "bullets": [
-          "Lider arquitectura de plataforma SaaS distribuida para flujos ERP multi-departamento",
-          "Disene microservicios modulares con Node.js, Go y .NET",
-          "Construi plataformas frontend con Next.js, Vue (Nuxt), React y Astro",
-          "Implemente arquitectura headless CMS con Sanity, Strapi y Prismic",
-          "Disene asistente empresarial con IA usando pipeline LLM + RAG",
-          "Construi sistema de ingestion y embedding de documentos con busqueda vectorial",
-          "Fine-tune modelos de lenguaje para automatizacion interna",
-          "Desarrolle sistema de deteccion de objetos en almacen (YOLOv8, PyTorch)",
-          "Desplegue servicios ML con FastAPI + Docker + Kubernetes",
-          "Gestiono despliegues en la nube en Microsoft Azure"
+          "Lideré arquitectura y desarrollo de plataforma IoT SaaS multi-tenant para 150K+ usuarios",
+          "Mejoré rendimiento del dashboard 38% con optimización React y API",
+          "Diseñé microservicios distribuidos procesando millones de eventos de dispositivos mensualmente",
+          "Reduje costos de infraestructura AWS 25% con optimización de contenedores y servicios",
+          "Entregué 20+ features para clientes en colaboración con producto y diseño",
+          "Mentoricé ingenieros y establecí estándares de calidad de código",
+          "Contribuí a decisiones de diseño de sistema para la hoja de ruta de escalabilidad"
         ]
       },
       {
-        "role": "Ingeniero de Software (Plataforma IA y Sistemas FinTech)",
-        "company": "Globalization Partners | Boston, MA, USA",
-        "dates": "Mar 2020 – Abr 2023",
-        "scope": "Sistemas financieros, experimentacion ML, APIs alta disponibilidad",
+        "role": "Full Stack Developer",
+        "company": "Curebase | San Francisco, CA",
+        "dates": "Oct 2015 – May 2021",
+        "scope": "Plataforma de ensayos clínicos, 50K+ participantes",
         "bullets": [
-          "Desarrolle APIs financieras de alto rendimiento en Node.js, Go, C#, .NET",
-          "Construi prototipos de deteccion de fraude con modelos de ML",
-          "Implemente asistente de insights financieros con GPT",
-          "Disene busqueda de documentacion de cumplimiento con arquitectura RAG",
-          "Construi pipelines de entrenamiento ML en Python",
-          "Mejore precision de deteccion de anomalias en 28%",
-          "Lidere optimizacion de bases de datos PostgreSQL y MongoDB"
+          "Construí plataforma de ensayos clínicos para 50K+ participantes",
+          "Mejoré completitud de tareas 31% con modernización UX",
+          "Reduje tiempo de respuesta API 45% con optimización de queries",
+          "Implementé testing automatizado reduciendo bugs en producción 40%",
+          "Mantuve flujos de datos seguros alineados con HIPAA"
         ]
       },
       {
-        "role": "Desarrollador Full-Stack Senior",
-        "company": "Globalization Partners | Boston, MA, USA",
-        "dates": "Ene 2018 – Abr 2020",
-        "scope": "Escalado SaaS, ecosistemas CMS, integraciones ERP",
+        "role": "Software Engineer II",
+        "company": "CCB Tech Group | Valdosta, GA",
+        "dates": "2013 – Sep 2015",
+        "scope": "Engagements full-stack con clientes",
         "bullets": [
-          "Escale producto SaaS de MVP a plataforma empresarial",
-          "Integre flujos ERP (inventario, facturacion, reportes)",
-          "Construi plataformas de marketing y producto con Next.js + Nuxt",
-          "Implemente arquitectura CMS con Strapi + PostgreSQL",
-          "Introduje despliegues automatizados e infraestructura como codigo",
-          "Inicie experimentos de modelado predictivo para analitica de usuarios"
+          "Lideré desarrollo full-stack para múltiples clientes",
+          "Mejoré tiempos de carga de aplicaciones hasta 50%",
+          "Diseñé servicios backend para flujos de alto volumen",
+          "Mentoricé desarrolladores junior",
+          "Trabajé directamente con stakeholders de negocio"
         ]
       },
       {
-        "role": "Desarrollador Full-Stack – Sistemas de Comercio",
-        "company": "Data-Core Systems Inc. | Bristol, PA, USA",
-        "dates": "Jun 2015 – Dic 2017",
-        "scope": "Arquitectura e-commerce, optimizacion de performance",
+        "role": "Software Engineer I",
+        "company": "CCB Tech Group | Valdosta, GA",
+        "dates": "2011 – 2012",
         "bullets": [
-          "Construi plataforma de comercio escalable con Next.js, Node.js, MongoDB",
-          "Integre Shopify y NetSuite ERP",
-          "Desarrolle checkout y sistemas de pago personalizados",
-          "Implemente autenticacion Supabase y acceso basado en roles",
-          "Construi prototipo de motor de recomendacion",
-          "Mejore tasa de conversion de checkout en 18%"
+          "Construí aplicaciones web responsivas para clientes SMB",
+          "Creé componentes reutilizables mejorando velocidad de entrega 30%",
+          "Implementé endpoints REST y lógica de negocio"
         ]
       },
       {
-        "role": "Desarrollador Backend – ERP y APIs",
-        "company": "Data-Core Systems Inc. | Bristol, PA, USA",
-        "dates": "Abr 2013 – May 2015",
-        "scope": "Arquitectura ERP, modernizacion API",
+        "role": "Junior Software Developer",
+        "company": "CCB Tech Group | Valdosta, GA",
+        "dates": "2010 – 2011",
         "bullets": [
-          "Disene APIs REST con Node.js, Flask, Django REST",
-          "Construi motores de reportes y flujos de datos para modulos ERP",
-          "Optime indice y diseno de esquema PostgreSQL",
-          "Reduje tiempos de respuesta del servidor en 35%",
-          "Ayude a migrar monolito legacy a estructura de servicios modular"
-        ]
-      },
-      {
-        "role": "Ingeniero Frontend Senior",
-        "company": "Chegg Inc. | Santa Clara, CA, USA",
-        "dates": "Jul 2010 – Mar 2013",
-        "bullets": [
-          "Lidere migracion a arquitectura SPA con Angular",
-          "Construi dashboards empresariales y paneles de analitica",
-          "Mejore performance de UI en 30%",
-          "Estandarice librerias de componentes"
-        ]
-      },
-      {
-        "role": "Desarrollador Frontend",
-        "company": "Chegg Inc. | Santa Clara, CA, USA",
-        "dates": "Ago 2008 – Jun 2010",
-        "bullets": [
-          "Desarrolle sitios web empresariales con CMS",
-          "Construi sistemas UI responsivos con HTML, CSS, JavaScript",
-          "Optime performance SEO"
-        ]
-      },
-      {
-        "role": "Pasante de Desarrollo Web",
-        "company": "Chegg Inc. | Santa Clara, CA, USA",
-        "dates": "Jun 2007 – Jul 2008",
-        "bullets": [
-          "Asisti en desarrollo frontend y soporte de base de datos",
-          "Obtuve experiencia fundamental en arquitectura de sistemas web"
+          "Soporte al desarrollo de aplicaciones web para clientes",
+          "Corregí defectos legacy y mejoré consistencia de UI",
+          "Asistí con mantenimiento de base de datos y consultas SQL"
         ]
       }
     ]
@@ -185,15 +138,15 @@
     "items": {
       "zetabarber-platform": {
         "title": "ZetaBarber",
-        "description": "Plataforma de descubrimiento y reserva de barberias locales construida con Next.js y Node.js, usando shadcn/ui y React Hooks para una UX rapida y responsive. Incluye busqueda por ciudad, turnos y recordatorios."
+        "description": "Plataforma de descubrimiento y reserva de barberías con Next.js y Node.js, shadcn/ui y React Hooks."
       },
       "warmly-ai-gtm": {
         "title": "Warmly AI GTM Platform",
-        "description": "Plataforma GTM con IA construida con React, Redux y Tailwind CSS, integrando servicios AI/LLM con backend .NET Core. Cubre senales de intencion a nivel persona, engagement con chat/email con IA y orquestacion de flujos para equipos de revenue."
+        "description": "Plataforma GTM con IA con React, Redux y Tailwind CSS, integrando servicios AI/LLM con backend .NET Core."
       },
       "gmelius-email-collaboration": {
         "title": "Gmelius",
-        "description": "Suite de asistente de email con IA y bandejas compartidas construida con React sobre AWS, respaldada por servicios .NET Core. Usa fine-tuning de AI/LLM para redaccion y triage, con Storybook para consistencia de UI y Swagger UI para APIs."
+        "description": "Suite de asistente de email con IA y bandejas compartidas con React en AWS y servicios .NET Core."
       }
     }
   },
@@ -201,8 +154,8 @@
     "frontend": "Frontend",
     "backend": "Backend",
     "databases": "Bases de Datos",
-    "cms": "CMS",
-    "ai": "IA y ML",
-    "tools": "Herramientas y DevOps"
+    "devops": "DevOps y Cloud",
+    "architecture": "Arquitectura",
+    "tools": "Herramientas y Testing"
   }
 }

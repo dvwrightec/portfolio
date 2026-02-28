@@ -14,10 +14,10 @@
         <a v-if="item.company.websiteUrl" :href="item.company.websiteUrl" target="_blank" rel="noopener noreferrer"
           class="block" :title="item.company.company">
           <CompanyLogo :logo-url="item.company.logoUrl" :badge="item.company.badge" :company-name="item.company.company"
-            :website-url="''" :invert-in-dark="item.company.id === 'descartes'" size="lg" square />
+            :website-url="''" size="lg" square />
         </a>
         <CompanyLogo v-else :logo-url="item.company.logoUrl" :badge="item.company.badge"
-          :company-name="item.company.company" :invert-in-dark="item.company.id === 'descartes'" size="lg" square />
+          :company-name="item.company.company" size="lg" square />
       </template>
 
       <template #title="{ item }">

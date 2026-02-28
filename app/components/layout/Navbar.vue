@@ -7,7 +7,7 @@
         aria-label="Go to home"
         @click="goHome"
       >
-        Roy Andreson
+        David Wright
       </button>
 
       <div class="hidden items-center gap-1 sm:flex">
@@ -73,7 +73,7 @@
         </div>
         <ThemeToggle class="hidden sm:inline-flex" />
         <a
-          href="https://github.com/roy-andreson"
+          href="https://github.com/dvwright"
           target="_blank"
           rel="noreferrer"
           class="inline-flex h-9 w-9 items-center justify-center rounded-md !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-slate-200 dark:hover:bg-white/5 dark:hover:!text-white"
@@ -82,8 +82,8 @@
           <Icon name="mdi:github" class="h-5 w-5" />
           <span class="sr-only">GitHub</span>
         </a>
-        <!-- <a
-          href="https://www.linkedin.com/in/roy-andreson-0435733a6/"
+        <a
+          href="https://www.linkedin.com/in/david-wright-tech/"
           target="_blank"
           rel="noreferrer"
           class="inline-flex h-9 w-9 items-center justify-center rounded-md !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-slate-200 dark:hover:bg-white/5 dark:hover:!text-white"
@@ -91,16 +91,6 @@
         >
           <Icon name="mdi:linkedin" class="h-5 w-5" />
           <span class="sr-only">LinkedIn</span>
-        </a> -->
-        <a
-          href="https://dev.to/bigchubby666sudo"
-          target="_blank"
-          rel="noreferrer"
-          class="inline-flex h-9 w-9 items-center justify-center rounded-md !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-slate-200 dark:hover:bg-white/5 dark:hover:!text-white"
-          aria-label="DEV Community"
-        >
-          <Icon name="simple-icons:devdotto" class="h-5 w-5" />
-          <span class="sr-only">DEV Community</span>
         </a>
       </div>
     </nav>
@@ -176,7 +166,7 @@
           <span class="ml-1.5">{{ t('nav.resume') }}</span>
         </button>
         <a
-          href="https://github.com/roy-andreson"
+          href="https://github.com/dvwright"
           target="_blank"
           rel="noreferrer"
           class="inline-flex h-9 w-9 items-center justify-center rounded-md !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-slate-200 dark:hover:bg-white/5 dark:hover:!text-white"
@@ -186,7 +176,7 @@
           <span class="sr-only">GitHub</span>
         </a>
         <a
-          href="https://www.linkedin.com/in/roy-andreson-0435733a6/"
+          href="https://www.linkedin.com/in/david-wright-tech/"
           target="_blank"
           rel="noreferrer"
           class="inline-flex h-9 w-9 items-center justify-center rounded-md !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-slate-200 dark:hover:bg-white/5 dark:hover:!text-white"
@@ -194,16 +184,6 @@
         >
           <Icon name="mdi:linkedin" class="h-5 w-5" />
           <span class="sr-only">LinkedIn</span>
-        </a>
-        <a
-          href="https://dev.to/bigchubby666sudo"
-          target="_blank"
-          rel="noreferrer"
-          class="inline-flex h-9 w-9 items-center justify-center rounded-md !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-slate-200 dark:hover:bg-white/5 dark:hover:!text-white"
-          aria-label="DEV Community"
-        >
-          <Icon name="simple-icons:devdotto" class="h-5 w-5" />
-          <span class="sr-only">DEV Community</span>
         </a>
       </div>
     </div>

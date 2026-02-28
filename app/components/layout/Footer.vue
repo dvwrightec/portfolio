@@ -12,7 +12,7 @@
           <span class="sr-only">LinkedIn</span>
         </a> -->
         <a
-          href="https://github.com/roy-andreson"
+          href="https://github.com/dvwright"
           target="_blank"
           rel="noreferrer"
           class="inline-flex h-9 w-9 items-center justify-center rounded-md !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-slate-200 dark:hover:bg-white/5 dark:hover:!text-white"
@@ -21,14 +21,14 @@
           <span class="sr-only">GitHub</span>
         </a>
         <a
-          href="https://dev.to/bigchubby666sudo"
+          href="https://www.linkedin.com/in/david-wright-tech/"
           target="_blank"
           rel="noreferrer"
           class="inline-flex h-9 w-9 items-center justify-center rounded-md !text-slate-900 transition hover:bg-slate-100 hover:!text-slate-950 dark:!text-slate-200 dark:hover:bg-white/5 dark:hover:!text-white"
-          aria-label="DEV Community"
+          aria-label="LinkedIn"
         >
-          <Icon name="simple-icons:devdotto" class="h-5 w-5" />
-          <span class="sr-only">DEV Community</span>
+          <Icon name="mdi:linkedin" class="h-5 w-5" />
+          <span class="sr-only">LinkedIn</span>
         </a>
       </div>
 

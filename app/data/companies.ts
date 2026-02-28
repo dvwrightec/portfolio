@@ -13,37 +13,29 @@ function faviconUrl(domain: string): string {
 }
 
 export const companies: Record<string, CompanyInfo> = {
-  'Descartes | Waterloo, Ontario, Canada': {
-    id: 'descartes',
-    logoUrl: '/icons/descartes_systems_group_logo.jpg',
-    fallbackLogoUrl: faviconUrl('descartes.com'),
-    badge: 'DE',
-    websiteUrl: 'https://www.descartes.com/',
+  'SmartRent | Scottsdale, AZ': {
+    id: 'smartrent',
+    logoUrl: faviconUrl('smartrent.com'),
+    fallbackLogoUrl: faviconUrl('smartrent.com'),
+    badge: 'SR',
+    websiteUrl: 'https://www.smartrent.com/',
   },
-  'Globalization Partners | Boston, MA, USA': {
-    id: 'globalization-partners',
-    logoUrl: '/icons/g_p_logo.jpg',
-    fallbackLogoUrl: faviconUrl('g-p.com'),
-    badge: 'GP',
-    websiteUrl: 'https://www.g-p.com/',
+  'Curebase | San Francisco, CA': {
+    id: 'curebase',
+    logoUrl: faviconUrl('curebase.com'),
+    fallbackLogoUrl: faviconUrl('curebase.com'),
+    badge: 'CB',
+    websiteUrl: 'https://www.curebase.com/',
   },
-  'Data-Core Systems Inc. | Bristol, PA, USA': {
-    id: 'datacore',
-    logoUrl: '/icons/data_core_systems_inc_logo.jpg',
-    fallbackLogoUrl: faviconUrl('datacoresystems.com'),
-    badge: 'DC',
-    websiteUrl: 'https://datacoresystems.com/',
-  },
-  'Chegg Inc. | Santa Clara, CA, USA': {
-    id: 'chegg',
-    logoUrl: '/icons/chegg_inc__logo.jpg',
-    fallbackLogoUrl: faviconUrl('chegg.com'),
-    badge: 'CH',
-    websiteUrl: 'https://www.chegg.com/',
+  'CCB Tech Group | Valdosta, GA': {
+    id: 'ccb-tech',
+    logoUrl: 'https://static.wixstatic.com/media/db81e4_2a42ce7eb1ce4b1087308fdea687677f.png/v1/fill/w_294,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/CCB%20Logo%20Color.png',
+    badge: 'CCB',
+    websiteUrl: '',
   },
 }
 
-/** Get company info by name – supports exact match or leading part (e.g. "Descartes") */
+/** Get company info by name – supports exact match or leading part (e.g. "SmartRent") */
 export function getCompanyInfo(companyName: string): CompanyInfo | undefined {
   const exact = companies[companyName]
   if (exact) return exact

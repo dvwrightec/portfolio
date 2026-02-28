@@ -64,19 +64,19 @@
               {{ status === 'sending' ? t('contact.form.sending') : t('contact.form.submit') }}
             </button>
             <a
-              href="mailto:bigchubby666@gmail.com"
+              href="mailto:stbstbdave123@gmail.com"
               class="inline-flex shrink-0 cursor-pointer items-center justify-center rounded-full border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white/50 hover:bg-white/10"
             >
               {{ t('contact.email') }}
             </a>
-            <!-- <a
-              href="https://www.linkedin.com/in/roy-andreson-0435733a6/"
+            <a
+              href="https://www.linkedin.com/in/david-wright-tech/"
               target="_blank"
               rel="noreferrer"
               class="inline-flex shrink-0 cursor-pointer items-center justify-center rounded-full border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white/50 hover:bg-white/10"
             >
               {{ t('contact.linkedin') }}
-            </a> -->
+            </a>
           </div>
         </form>
         </div>
@@ -147,7 +147,7 @@ async function handleSubmit() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        form_id: '43bef58a-2a44-4330-b4bb-17a3ffa0daf2',
+        form_id: 'c219a57b-4bf3-4369-8088-e7619bd50efd',
         name: form.name,
         email: form.email,
         message: form.message,
